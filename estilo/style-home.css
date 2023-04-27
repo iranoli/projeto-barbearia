@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');/*font-family: 'Lato', sans-serif;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    
+    box-sizing: content-box;  
+}
+
+header {
+    background: #BBBBBB;
+    padding: 1.25rem 0;
+    margin-bottom: 1.25rem;
+                                                  
+}
+
+
+.caixa {
+    height: 18.75rem;
+    display: flex;
+    justify-content: space-between;    
+             
+}
+
+.logo {
+    
+    margin: 0.8rem 0rem 0rem 15.75rem;  
+
+}
+
+nav {
+    display: flex; 
+    align-items: center;
+    margin: 0rem 18.75rem 0rem 0rem;
+    gap: 1.87rem;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;    
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: overline;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    margin-top: 0.62rem;
+    padding: 1.87rem;
+    background: #CCCCCC;
+}
+
+.titulo-centralizado, p {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    
+}
+
+.principal-texto {
+
+    font-size: 1.10rem;
+}
+
+
+em strong {
+    color: rgba(255, 0, 0, 0.726);
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+    background-color: white;
+    padding: 6.25rem;   
+         
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin: 1.25rem;
+}
+
+.lista-principal {
+    /*Desbloqueando a linha da lista e inserindo a imagem dentro dela*/
+    font-size: 1.10rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagem-beneficio {
+
+    width: 40vw;
+}
+
+footer {
+    text-align: center;
+    background: url("../imagens/bg.jpg");
+    padding: 2.5rem 0rem;
+}
+
+.copyright{
+    color: white;
+    font-size: 0.81rem;
+    margin-top: 1.87rem;
+}
+
+@media (max-width: 1200px) {
+      
+    .logo {
+        margin: 0.8rem 0rem 0rem 4rem;
+
+    }
+
+    nav {
+        
+        margin: 5rem 6.25rem 0rem 0rem ;
+        flex-direction: column;       
+        
+    }
+
+    .beneficios{
+        padding: 2.20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-principal {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .imagem-beneficio {
+        margin-top: 30px;
+    }
+}    

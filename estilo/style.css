@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');/*font-family: 'Lato', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background: #BBBBBB;
+    padding: 1.25rem 0;
+    margin-bottom: 1.25rem;    
+           
+}
+
+.caixa {
+    height: 18.75rem;
+    display: flex;
+    justify-content: space-between;    
+    
+             
+}
+
+.logo {
+    
+    margin: 0.8rem 0rem 0rem 15.75rem;  
+
+}
+
+nav {
+    display: flex; 
+    align-items: center;
+    margin: 0rem 18.75rem 0rem 0rem;
+    gap: 1.87rem;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;    
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: blue;
+    text-decoration: overline;
+}
+
+.produtos {
+    width: 58.75rem;
+    margin: 0 auto;
+    padding: 3.12rem 0;
+    
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    /* Soma o percentual(%) da caixa mais os pixels(px)*/
+    box-sizing: border-box;
+    padding: 1.87rem 1.25rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.418);
+
+}
+
+.produtos li:hover {
+    border-image: linear-gradient(to bottom, blue 50%, red 50%) 20;   
+    
+}
+
+.produtos li:active {
+    border-color: green;
+    
+}
+
+.produtos li:hover h2 {
+    font-size: 2.37rem;
+    
+}
+
+.produtos h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.87rem;
+    font-weight: bold;
+}
+
+.img-produtos {
+    width: 60%;
+}
+
+.produto-descricao {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.12rem;
+}
+
+.produto-preco {
+    font-size: 1.37rem;
+    font-weight: bold;
+    margin-top: 0.62rem;
+}
+
+main {
+    width: 58.75rem;
+    margin: 0 auto;
+}
+
+form {
+    margin: 2.5rem 0rem;
+}
+
+fieldset {
+    border: none;
+}
+
+form label, form legend {
+    display: block;
+    margin-bottom: 0.62rem;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 1.25rem;
+    width: 50%;
+    padding: 0.62rem 0.62rem;
+}
+
+.checkbox {
+    margin: 1.25rem 0rem;
+}
+
+.enviar {
+    width: 40%;
+    padding: 0.93rem 0rem;
+    font-size: 1.12rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.247);
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgb(207, 135, 0);
+    transform: scale(1.1);
+}
+
+table {
+    margin: 1.25rem 2.5rem;
+}
+
+thead {
+    background-color: #666666;
+    color: white;
+    font-size: bold;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5rem 0.93rem;
+}
+
+footer {
+    text-align: center;
+    background: url("../imagens/bg.jpg");
+    padding: 2.5rem 0rem;
+}
+
+.copyright{
+    color: white;
+    font-size: 0.81rem;
+    margin-top: 1.87rem;
+}
+
+@media (max-width: 1200px) {
+      
+    .logo {
+        margin: 0.8rem 0rem 0rem 4rem;
+
+    }
+
+    nav {
+        
+        margin: 5rem 6.25rem 0rem 0rem ;
+        flex-direction: column;       
+        
+    }
+    
+    main {
+        width: auto;
+        padding-left: 1.87rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #periodo {
+        width: 6.25rem;
+
+    }
+
+    .produtos {
+        width: 29.75rem; 
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+
+    
+}
