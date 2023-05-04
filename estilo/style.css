@@ -82,15 +82,16 @@ nav a:hover {
     
 }
 
-.produtos li:hover h2 {
-    font-size: 2.37rem;
-    
-}
 
 .produtos h2 {
     font-family: 'Lato', sans-serif;
     font-size: 1.87rem;
     font-weight: bold;
+}
+
+.produtos li:hover h2 {
+    font-size: 2.37rem;
+    
 }
 
 .img-produtos {
@@ -222,6 +223,15 @@ footer {
         justify-content: space-between;
         box-sizing: border-box;
         
+    }
+
+    .produtos h2 {
+        font-size: 1.87rem;
+        
+    }
+    
+    .produtos li:hover h2 {
+        font-size: 1.87rem;
         
     }
 
@@ -236,14 +246,17 @@ footer {
     .produtos {
         width: 22.75rem;
         box-sizing: border-box;
-
-        
+       
     }
 
-    .produtos li h2 {
+    .produtos h2 {
         padding: auto;
         font-size: 1.5rem;
     }
 
+    .produtos li h2:hover  {
+        font-size: 1.5rem;
+        
+    }
     
 }
