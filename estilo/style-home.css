@@ -125,10 +125,14 @@ footer {
 }
 
 @media (max-width: 1200px) {
+
+    .caixa {
+        box-sizing: border-box;
+    }
       
     .logo {
         margin: 0.8rem 0rem 0rem 4rem;
-
+        margin: 0 auto;
     }
 
     nav {

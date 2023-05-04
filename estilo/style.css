@@ -18,7 +18,7 @@ header {
 .caixa {
     height: 18.75rem;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
     
              
 }
@@ -184,9 +184,14 @@ footer {
 }
 
 @media (max-width: 1200px) {
+
+    .caixa {
+        box-sizing: border-box;
+    }
       
     .logo {
         margin: 0.8rem 0rem 0rem 4rem;
+        margin: 0 auto;
 
     }
 
@@ -215,9 +220,23 @@ footer {
         width: 29.75rem; 
         display: flex;
         justify-content: space-between;
+        box-sizing: border-box;
         
         
     }
 
     
+}
+
+@media (max-width: 511px) {
+    .produtos {
+        width: 22.75rem;
+        box-sizing: border-box;
+        
+    }
+
+    .produtos li h2 {
+        padding: auto;
+        font-size: 1.5rem;
+    }
 }
