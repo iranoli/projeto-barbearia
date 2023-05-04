@@ -229,9 +229,14 @@ footer {
 }
 
 @media (max-width: 511px) {
+    main {
+        padding-left: 0;
+    }
+
     .produtos {
         width: 22.75rem;
         box-sizing: border-box;
+
         
     }
 
@@ -239,4 +244,6 @@ footer {
         padding: auto;
         font-size: 1.5rem;
     }
+
+    
 }
